@@ -27,6 +27,3 @@ __pycache__/
 Thumbs.db
 .vscode/
 .idea/
-
-# 5. User specified files
-reqments.txt
