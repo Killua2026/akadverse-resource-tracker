@@ -1,6 +1,6 @@
 # AkadVerse: Learning & Faculty Resource Tracker
 
-**Tier 4 Data Pipeline / Integration | Microservice Port: `8003`**
+**Tier 4 Data Pipeline / Integration | Microservice Port: `8006`**
 
 A high-performance redirect and analytics engine that captures student engagement with external educational resources while maintaining seamless learning transitions.
 
@@ -76,7 +76,7 @@ pip install -r requirements.txt
 ## Running the Server
 
 ```bash
-uvicorn main:app --host 127.0.0.1 --port 8003 --reload
+uvicorn main:app --host 127.0.0.1 --port 8006 --reload
 ```
 
 Expected terminal output:
@@ -84,7 +84,7 @@ Expected terminal output:
 ```
 [Startup] Database setup complete.
 INFO:     Application startup complete.
-INFO:     Uvicorn running on http://127.0.0.1:8003 (Press CTRL+C to quit)
+INFO:     Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
 ```
 
 ## API Endpoints
@@ -128,7 +128,7 @@ Redirects browser to the target URL with UTM parameters appended.
 
 ## Testing with Swagger UI
 
-Open: [http://127.0.0.1:8003/docs](http://127.0.0.1:8003/docs)
+Open: [http://127.0.0.1:8006/docs](http://127.0.0.1:8006/docs)
 
 ## Example Test Inputs
 
@@ -136,7 +136,7 @@ Open: [http://127.0.0.1:8003/docs](http://127.0.0.1:8003/docs)
 
 Open your browser and enter:
 
-`http://localhost:8003/redirect?target_url=https://www.google.com&user_id=ikay_test&source=sidebar`
+`http://localhost:8006/redirect?target_url=https://www.google.com&user_id=ikay_test&source=sidebar`
 
 Expected: Browser redirects to Google. Terminal shows "Logged click".
 

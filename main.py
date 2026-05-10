@@ -110,7 +110,7 @@ async def get_click_stats():
 
 if __name__ == "__main__":
     import uvicorn
-    #binding the microservice to port 8003
-    uvicorn.run(app, host="127.0.0.1", port=8003)
+    #binding the microservice to port 8006
+    uvicorn.run(app, host="127.0.0.1", port=8006)
     
-# run with:  uvicorn main:app --host 127.0.0.1 --port 8003 --reload
+# run with:  uvicorn main:app --host 127.0.0.1 --port 8006 --reload
